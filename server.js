@@ -25,7 +25,7 @@ app.get('/about', (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).show('notfound.jpg');
+  res.show('notfound.html');
 });
 
 app.listen(8000, () => {
